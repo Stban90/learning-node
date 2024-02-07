@@ -12,7 +12,7 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": "The Dark Knight",
+    "title": "La noche negra",
     "year": 2008,
     "director": "Christopher Nolan",
     "duration": 152,
@@ -21,11 +21,15 @@ Content-Type: application/json
 }
 
 
+### Borrar una pelicula 
+DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+
 ###Actualizar una pelicula
 PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
 
 {
-    "year": "2018"
+    "year": 2018
 }
  
